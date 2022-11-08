@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <title>Chrispy's | Cheese & Onion</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+            <div class="nav-links" id="nav-links" onclick="hideMenu()">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" id="current-page">HOME</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="chips-wrapper">
+            <h1>Chrispy's Cheese & Onion Potato Chips</h1>
+            <img src="images/Cheese _ Onion.png" alt="Chrispy's Cheese & Onion chips" class="desktop-chips">
+            <img src="images/Cheese _ Onion.png" alt="Chrispy's Cheese & Onion Chips" class="mobile-chips">
+            <button class="hero-btn" onclick="location.href='#chips'">MORE INFO</button>
+        </div>
+
+    </header>
+
+    <main class="chips" id="chips">
+        <div class="chips-image">
+            <h1>Cheese & Onion Flavour</h1>
+            <img src="images/Cheese _ Onion.png" alt="Chrispy's Creamy Cheddar Chips">
+        </div>
+        <div class="chips-info">
+            <p>INGREDIENTS:
+                <br>
+                <br>
+                Potatoes, Maltodextrin, Salt, Creamer [Corn Syrup Solids, Palm Olien, Vegetable Fat (Palm Oil
+                (Fruit Mesocarp)), Stabilizer (E339, E452), Whey Powder (Cow's Milk), Sodium Caseinate (Cow's
+                Milk) (E469), Vegetable Protein, Emulsifier (E452, E331, E481), Anticaking Agent (E551)], Maize, Onion (Irradiated), Buttermilk Powder, Acids (E262, E327, E330), Sugar, Garlic (Irradiated), Herbs, Anticaking Agent (E551), Yeast Extract (Barley - Gluten), Flavour Enhancers (E631, E627) and Flavouring.</p>
+
+            <br>
+
+            <p>ALLERGENS: Contains Soya.</p>
+
+            <br>
+
+            <p>Barcode: 6 002870 006452</p>
+        </div>
+    </main>
+
+    <button class="ctn-btn" style="margin-bottom: 10vh; background-color: var(--sec);" onclick="location.href='products.html'">BACK TO FLAVOURS</button>
+
+    <footer>
+        <div class="foot-dig">
+            <h2>Developed by <a href="digitalcreation.co.za"> Digital Creation </a></h2>
+        </div>
+
+        <div class="foot-co">
+            <h2>&copy; Chrisco 2022</h2>
+            <i class="fa fa-facebook" aria-hidden="true"><a href=""></a></i>
+            <i class="fa fa-instagram" aria-hidden="true"><a href=""></a></i>
+            <i class="fa fa-linkedin" aria-hidden="true"><a href=""></a></i>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

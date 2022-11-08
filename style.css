@@ -34,7 +34,7 @@ h6,
 a,
 button {
     font-family: "Montserrat", sans-serif;
-    font-size: 10vh;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -64,6 +64,30 @@ a {
 .hero-btn:hover {
     transition: 1s;
     border-radius: 0px;
+    transform: scale(1.1);
+}
+
+.scroll-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--bg);
+    cursor: pointer;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 9vh;
+    font-weight: 600;
+    padding: 0 2vw;
+    height: 7vh;
+    border: 0;
+    margin-top: 0;
+    border-radius: 1vw;
+}
+
+.scroll-btn:hover {
+    transition: 1s;
+    border-radius: 0px;
+    color: var(--sec);
     transform: scale(1.1);
 }
 
@@ -193,7 +217,6 @@ nav .fa {
 .header-wrapper h1 {
     padding-top: 20vh;
     color: var(--bg);
-    font-size: 6vw;
 }
 
 .header-wrapper img {
@@ -245,7 +268,6 @@ header {
 .header-wrapper h1 {
     padding-top: 20vh;
     color: var(--bg);
-    font-size: 6vw;
 }
 
 /* SLIDESHOW */
@@ -333,7 +355,6 @@ header {
 }
 
 .prod-header h1 {
-    font-size: 7vw;
     padding-bottom: 2vh;
 }
 
@@ -415,7 +436,6 @@ footer h2 a {
 }
 
 .home-sect h1 {
-    font-size: 3vw;
     text-align: center;
 }
 
@@ -445,10 +465,6 @@ footer h2 a {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.about-sect h1 {
-    font-size: 10vw;
 }
 
 .about-sub-sect {
@@ -546,6 +562,66 @@ textarea {
     box-sizing: border-box;
 }
 
+.chips-wrapper {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chips-wrapper h1 {
+    padding-top: 20vh;
+    color: var(--bg);
+}
+
+.chips-wrapper img {
+    width: 20%;
+    padding: 2vh 2vw;
+}
+
+
+.desktop-chips {
+    display: inline-block;
+    width: 90vw;
+    height: auto;
+}
+
+.mobile-chips {
+    display: none;
+}
+
+.chips {
+    display: flex;
+    padding: 3vh 5vw;
+    width: 90vw;
+}
+
+.chips-image {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 2vw;
+}
+
+.chips-image img {
+    width: 30vw;
+}
+
+.chips-info {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 2vh 2vw;
+}
+
+.chips-info p {
+    text-align: left;
+}
 
 @media (max-width: 700px) {
     * {
@@ -569,7 +645,7 @@ textarea {
     a,
     button {
         font-family: "Montserrat", sans-serif;
-        font-size: 10vw;
+        font-size: 8vw;
     }
 
     a {
@@ -801,9 +877,7 @@ textarea {
         align-items: center;
     }
 
-    .home-sect h1 {
-        font-size: 8vw;
-    }
+
 
     .home-sub-sect img {
         width: 70vw;
@@ -864,9 +938,7 @@ textarea {
         align-items: center;
     }
 
-    .about-sect h1 {
-        font-size: 10vw;
-    }
+
 
     .about-sub-sect {
         display: flex;
@@ -898,7 +970,6 @@ textarea {
     .header-wrapper h1 {
         padding-top: 20vh;
         color: var(--bg);
-        font-size: 10vw;
     }
 
     .header-wrapper img {
@@ -961,6 +1032,74 @@ textarea {
         font-size: 2vh;
         border: 0.3vh solid var(--acc);
         box-sizing: border-box;
+    }
+
+    .chips-wrapper {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .chips-wrapper h1 {
+        padding-top: 20vh;
+        color: var(--bg);
+    }
+
+    .chips-wrapper img {
+        width: 50%;
+        padding: 2vh 2vw;
+    }
+
+
+    .mobile-chips {
+        display: inline-block;
+        width: 90vw;
+        height: auto;
+    }
+
+    .desktop-chips {
+        display: none;
+    }
+
+    .chips {
+        display: flex;
+        padding: 3vh 5vw;
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chips-image {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2vh 2vw;
+    }
+
+    .chips-image h1 {
+        margin-bottom: 2vh;
+    }
+
+    .chips-image img {
+        width: 70vw;
+    }
+
+    .chips-info {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding: 2vh 0vw;
+    }
+
+    .chips-info p {
+        text-align: left;
+        font-size: 3vh;
     }
 
 
