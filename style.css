@@ -224,6 +224,10 @@ nav .fa {
     padding: 2vh 2vw;
 }
 
+#imp-img {
+    width: 25%;
+    padding: 2vh 2vw;
+}
 
 .desktop-home-chips {
     display: inline-block;
