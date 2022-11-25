@@ -28,20 +28,104 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
+        
         <h1>Our Products</h1>
 
     </section>
 
     <!--COURSE-->
+    
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-    <section id="slider">
-        <div id="box">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 9</div>
+      <img src="images/CheddaR.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 9</div>
+      <img src="images/Cheese _ Onion.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 9</div>
+      <img src="images/Masala.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 9</div>
+        <img src="images/Mexican Chilli.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 9</div>
+        <img src="images/Roast Chicken.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 9</div>
+        <img src="images/Salt _ Vinegar.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 9</div>
+        <img src="images/Smoked Beef.jpg" style="width:100%">
+      </div> <div class="mySlides fade">
+        <div class="numbertext">8 / 9</div>
+        <img src="images/Sweet Chilli Chutney.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 9</div>
+        <img src="images/Tomato Sauce.jpg" style="width:100%">
+
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+ 
+
+    <section class="prod-wrap">
+        <div class="product">
+            <h2>Creamy Cheddar</h2>
             <img src="images/CheddaR.jpg" alt="">
         </div>
 
-        <button class="slide-button prev">-</button>
-        <button class="slide-button next">+</button>
-
+        <div class="product">
+            <h2>Cheese and Onion </h2>
+            <img src="images/Cheese _ Onion.jpg" alt="">
+        </div>
+        <div class="product">
+            <h2>Masala</h2>
+            <img src="images/Masala.jpg" alt="">
+        </div>
+        <div class="product">
+            <h2>Mexican Chilli</h2>
+            <img src="images/Mexican Chilli.jpg" alt="">
+        </div>
+        <div class="product">
+            <h2>Roast Chicken</h2>
+            <img src="images/Roast Chicken.jpg" alt="">
+        </div>
+        <div class="product">
+            <h2>Salt & Vinegar</h2>
+            <img src="images/Salt _ Vinegar.jpg" alt="">
+        </div>
+        <div class="product">
+            <h2>Smoked Beef</h2>
+            <img src="images/Smoked Beef.jpg" alt="">
+        </div>
+        <div class="product">
+            <h2>Swwet Chilli Chutney</h2>
+            <img src="images/Sweet Chilli Chutney.jpg" alt="">
+        </div>
+        <div class="product">
+            <h2>Tomato Sauce</h2>
+            <img src="images/Tomato Sauce.jpg" alt="">
+        </div>
     </section>
 
 
@@ -57,16 +141,41 @@
     <script>
         //toggle hamburger in JS
 
-        var navLinks = document.getElementById("nav-links")
+var navLinks = document.getElementById("nav-links")
 
-        function hideMenu() {
-            navLinks.style.right = "-200px"
-        }
+function hideMenu() {
+    navLinks.style.right = "-200px"
+}
 
-        function showMenu() {
-            navLinks.style.right = "0px"
-        }
+function showMenu() {
+    navLinks.style.right = "0px"
+}
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+   }
+  slides[slideIndex-1].style.display = "block";
+}
+
     </script>
+
 </body>
 
 </html>
