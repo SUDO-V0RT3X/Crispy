@@ -71,7 +71,7 @@
             </div>
 
             <div class="contact-col">
-                <form action="https://formspree.io/f/xzbyawvy" method="post">
+                <form onsubmit="sendEmail(); reset(); return false;" method="POST">
                     <input name="name" type="text" placeholder="ENTER YOUR NAME" required>
                     <input name="email" type="email" placeholder="ENTER YOUR EMAIL" required>
                     <input name="subject" type="text" placeholder="ENTER YOUR SUBJECT">
@@ -79,6 +79,26 @@
                     <button type="submit" class="hero-btn hero-btn-dark">SEND MESSAGE</button>
 
                 </form>
+
+                <script src="https://smtpjs.com/v3/smtp.js">
+                </script>
+                
+                <script>
+                  //  function sendEmail(){
+                    //    Email.send({
+                      //      Host : "smtp.gmail.com",
+                        //    Username: """,
+                          //  Password : "",
+                           // To : "venomvortexx@gmail.com",
+                           // From : document.getElementById("email").value,
+                            //Subject : "Test",
+                            //Body : "And this is the body"
+                        //}).then(
+                          //  message => alert("Message was sent")
+                     //   );
+                   // }
+            
+            </script>
 
             </div>
         </div>
@@ -90,12 +110,12 @@
 
     <section class="footer">
 
-        <p> Developed by <a href="https://www.instagram.com/_digital.creation_/"> Digital Creation</a> <br> &copy Crispy's 2022</p>
+        <p> Developed by <a href="https://www.instagram.com/_digital.creation_/"> Digital Creation</a> <br> &copy Chrispy's 2022</p>
 
     </section>
 
 
-
+    
     <script>
         //toggle hamburger in JS
 
