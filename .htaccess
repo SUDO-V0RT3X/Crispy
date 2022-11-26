@@ -1,4 +1,10 @@
+# Rewrite starts here
+RewriteEngine on
 
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+# Doesnt apply to existing directing 
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check for file in dir
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+RewriteRule ^(.*)$ $1.html [NC,L]
