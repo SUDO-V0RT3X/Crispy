@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nato:wght@300;400;600&display=swap");
 
+/* UNIVERSAL */
 :root {
     --text: rgb(0, 0, 0);
     --bg: #ffffff;
@@ -18,16 +19,48 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6, a, button {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
     font-family: "Montserrat", sans-serif;
     font-size: 10vh;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--acc);
 }
 
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(231, 104, 0);
+    color: var(--bg);
+    cursor: pointer;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vh;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    width: 45vw;
+    height: 7vh;
+    border: 0;
+    margin-top: 3vh;
+    border-radius: 1vw;
+}
+
+.hero-btn:hover {
+    transition: 1s;
+    border-radius: 0px;
+    transform: scale(1.1);
+}
+
+/* NAVBAR */
 nav {
     display: flex;
     padding: 0% 6%;
@@ -80,21 +113,22 @@ nav .fa {
     display: none;
 }
 
-header{
+/* HEADER */
+header {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient( 0deg, rgb(136, 1, 1), rgb(86, 31, 1));
+    background: linear-gradient(0deg, rgb(136, 1, 1), rgb(86, 31, 1));
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-.header-wrapper{
+.header-wrapper {
     height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
 
 }
 
@@ -106,31 +140,10 @@ header{
 .header-wrapper h1 {
     padding-top: 20vh;
     color: var(--bg);
+    font-size: 10vw;
 }
 
-.hero-btn {
-    display: inline-block;
-    text-decoration: none;
-    background-color: rgb(231, 104, 0);
-    color: var(--bg);
-    cursor: pointer;
-    position: relative;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1vw;
-    font-weight: 600;
-    padding: 1vw 2vw;
-    border: 0;
-    margin-top: 3vh;
-    border-radius: 1vw;
-}
-
-.hero-btn:hover {
-    transition: 1s;
-    border-radius: 0px;
-    transform: scale(1.1);
-}
-
-
+/* FOOTER */
 
 footer {
     display: flex;
@@ -145,7 +158,8 @@ footer h2 {
     font-size: 1.5vw;
     padding: 0 2vw;
 }
-footer h2 a{
+
+footer h2 a {
     font-size: 1.5vw;
 }
 
@@ -156,10 +170,37 @@ footer h2 a{
     align-items: center;
 }
 
-.foot-co i{
+.foot-co i {
     font-size: 1.5vw;
     padding-left: 1vw;
     display: flex;
+}
+
+.home-sect {
+    width: 90vw;
+    height: auto;
+    padding: 2vh 0vw 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-sub-sect {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 0vw 2vh 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home-sub-sect img {
+    width: 40vw;
+}
+
+.home-sub-sect p {
+    padding: 2vh 0vw 2vh 2vw;
+
 }
 
 @media (max-width: 700px) {
@@ -209,5 +250,47 @@ footer h2 a{
 
     .nav-links ul {
         padding: 10vw;
+    }
+
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        height: 10vh;
+        width: 100vw;
+    }
+
+    footer h2 {
+        font-size: 3vw;
+        padding: 0 2vw;
+    }
+
+    footer h2 a {
+        font-size: 3vw;
+    }
+
+    .foot-co {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .foot-co i {
+        font-size: 3vw;
+        padding-left: 1vw;
+        display: flex;
+    }
+
+    .home-sect {
+        width: 100vw;
+        height: auto;
+        padding: 2vh 2vw;
+    }
+
+    .home-sub-sect img {
+        width: 40vw;
     }
 }
