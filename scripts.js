@@ -3,7 +3,7 @@
 var navLinks = document.getElementById("nav-links")
 
 function hideMenu() {
-    navLinks.style.right = "-200px"
+    navLinks.style.right = "-60vw"
 }
 
 function showMenu() {
