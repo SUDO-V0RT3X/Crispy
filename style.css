@@ -18,6 +18,11 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+p {
+    text-align: center;
 }
 
 h1,
@@ -30,6 +35,7 @@ a,
 button {
     font-family: "Montserrat", sans-serif;
     font-size: 10vh;
+    text-align: center;
 }
 
 a {
@@ -338,14 +344,14 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 10vh 2vw;
+    margin: 0vh 2vw;
 
 }
 
 .product {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 5vh 2vw;
     flex-basis: 50%;
     justify-content: center;
     align-items: center;
@@ -410,6 +416,7 @@ footer h2 a {
 
 .home-sect h1 {
     font-size: 3vw;
+    text-align: center;
 }
 
 .home-sub-sect {
@@ -441,7 +448,7 @@ footer h2 a {
 }
 
 .about-sect h1 {
-    font-size: 3vw;
+    font-size: 10vw;
 }
 
 .about-sub-sect {
@@ -517,10 +524,12 @@ footer h2 a {
 
 .contact-col div p {
     padding: 0;
+    text-align: left;
 }
 
 .contact-col div h5 {
     font-size: 3vh;
+    text-align: left;
     margin-bottom: 1vh;
     color: var(--text);
 }
@@ -539,6 +548,35 @@ textarea {
 
 
 @media (max-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Lato", "sans-serif";
+        font-size: 3vh;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    button {
+        font-family: "Montserrat", sans-serif;
+        font-size: 10vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--acc);
+    }
+
     nav .fa-bars {
         display: block;
         color: var(--bg);
@@ -827,7 +865,7 @@ textarea {
     }
 
     .about-sect h1 {
-        font-size: 3vw;
+        font-size: 10vw;
     }
 
     .about-sub-sect {
@@ -835,13 +873,13 @@ textarea {
         flex-direction: row;
         padding: 2vh 0vw 2vh 2vw;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     .about-sub-sect img {
-        width: 40vw;
+        width: 70vw;
     }
 
     .about-sub-sect p {
@@ -860,7 +898,7 @@ textarea {
     .header-wrapper h1 {
         padding-top: 20vh;
         color: var(--bg);
-        font-size: 6vw;
+        font-size: 10vw;
     }
 
     .header-wrapper img {
@@ -898,7 +936,7 @@ textarea {
     }
 
     .contact-col div .fa {
-        font-size: 3vh;
+        font-size: 4vh;
         color: var(--acc);
         margin: 1vh 3vw 1vh 1vw;
     }
