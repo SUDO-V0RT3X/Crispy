@@ -1073,8 +1073,8 @@ footer {
         display: flex;
         flex-direction: column;
         padding: 0.6em;
-        height: 30vh;
-        width: 15vw;
+        height: auto;
+        width: 20vw;
         outline: 0.1em var(--acc) solid;
         margin: 1em 0;
         border-radius: 30px;
