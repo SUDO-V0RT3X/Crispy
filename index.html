@@ -15,33 +15,38 @@
 
     <header>
         <nav>
-            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-            <div class="nav-links" id="nav-links" onclick="hideMenu()">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html" id="current-page">HOME</a></li>
-                    <li><a href="products.html">PRODUCTS</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
+            <div class="nav-wrapper">
+                <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                <div class="nav-links" id="nav-links" onclick="hideMenu()">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html" id="current-page">HOME</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
-        <div class="header-wrapper">
-            <h1>Chrispy's</h1>
-            <img src="images/home-chips.png" alt="Chrispy's Chips" class="desktop-home-chips">
-            <img src="images/mobile-home-chips.png" alt="Chrispy's Chips" class="mobile-home-chips">
-            <button class="hero-btn" onclick="location.href='#info'">LEARN MORE</button>
+        <div class="header-wrap">
+            <div class="header-wrapper">
+                <img src="images/logo.png" alt="Chrispy's Logo">
+                <h1>Chrispy's Potato Chips</h1>
+            </div>
         </div>
-
     </header>
 
     <section class="home-sect" id="info">
-        <h1>Chrispy's Potato Chips</h1>
         <div class="home-sub-sect">
-            <img src="images/chips2.jpg" alt="">
-            <p>Chrispy's is an all-new potato chips brand with 9 amazing flavours.</p>
+            <img src="images/Big Chip Packets.png" alt="Chrispy's Large Chips Packets">
+            <p>Box size: x grams</p>
+        </div>
+
+        <div class="home-sub-sect">
+            <img src="images/Small Chip Packets.png" id="small-packets" alt="Chrispy's Small Chips Packets">
+            <p>Box size: x grams</p>
         </div>
     </section>
 
@@ -51,15 +56,14 @@
     </section>
 
     <footer>
-        <div class="foot-dig">
-            <h2>Developed by <a href="digitalcreation.co.za"> Digital Creation </a></h2>
-        </div>
+        <div class="footer-wrapper">
+            <div class="foot-dig">
+                <p>Developed by <a href="digitalcreation.co.za"> Digital Creation </a></p>
+            </div>
 
-        <div class="foot-co">
-            <h2>&copy; Chrisco 2022</h2>
-            <i class="fa fa-facebook" aria-hidden="true"><a href=""></a></i>
-            <i class="fa fa-instagram" aria-hidden="true"><a href=""></a></i>
-            <i class="fa fa-linkedin" aria-hidden="true"><a href=""></a></i>
+            <div class="foot-co">
+                <p>&copy; Chrisco 2022</p>
+            </div>
         </div>
     </footer>
 

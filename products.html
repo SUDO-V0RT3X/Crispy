@@ -15,28 +15,22 @@
 
     <section class="sec-head">
         <nav>
-            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-            <div class="nav-links" id="nav-links" onclick="hideMenu()">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="products.html" id="current-page">PRODUCTS</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
+            <div class="nav-wrapper">
+                <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                <div class="nav-links" id="nav-links" onclick="hideMenu()">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="products.html" id="current-page">PRODUCTS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
-        <div class="header-wrapper">
-            <h1>Our Products</h1>
-
-            <img id="imp-img" src=" images/logo.png" alt="Chrispy's Logo">
-
-            <button class="scroll-btn" onclick="location.href='#products'"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-            </button>
-        </div>
-
+        <h1>Our Products</h1>
         <br>
 
         </div>
@@ -47,82 +41,194 @@
         <p>Below is a list of our 9 delicious flavours - each guaranteed with full flavour.</p>
     </section>
     <section class="prod-wrap">
-        <a href="creamycheddar.html" class="product">
-            <h2>Creamy Cheddar</h2>
+        <a href="#creamycheddar" class="product" id="cheddar">
             <img src="images/CheddaR.png" alt="Chrispy's Creamy Cheddar Crisps">
-            <button class="ctn-sec" onclick="location.href='creamycheddar.html'">More Info</button>
+            <p>Creamy Cheddar </p>
         </a>
 
-        <a href="cheeseonion.html" class="product">
-            <h2>Cheese & Onion </h2>
-            <img src="images/Cheese _ Onion.png" alt="Chrispy's Cheese & Onion Crisps">
-            <button class="ctn-sec" onclick="location.href='cheeseonion.html'">More Info</button>
-        </a>
-    </section>
+        <div id="creamycheddar" class="overlay">
+            <div class="popup">
+                <h2>Creamy Cheddar Flavour</h2>
+                <a class="close" href="#cheddar">&times;</a>
+                <div class="content">
+                    <img src="images/CheddaR.png" alt="Chrispy's Creamy Cheddar Chips">
+                    <p>48 per pallet</p>
+                    <p>20 per box</p>
+                    <p>Barcode: 6 002870 006582</p>
 
-    <section class="prod-wrap">
-
-        <a href="masala.html" class="product">
-            <h2>Masala</h2>
-            <img src="images/Masala.png" alt="Chrispy's Masala Crisps">
-            <button class="ctn-sec" onclick="location.href='masala.html'">More Info</button>
-        </a>
-        <a href="mexicanchilli.html" class="product">
-            <h2>Mexican Chilli</h2>
-            <img src="images/Mexican Chilli.png" alt="Chrispy's Mexican Chilli Crisps">
-            <button class="ctn-sec" onclick="location.href='mexicanchilli.html'">More Info</button>
-        </a>
-    </section>
-
-    <section class="prod-wrap">
-
-        <a href="roastchicken.html" class="product">
-            <h2>Roast Chicken</h2>
-            <img src="images/Roast Chicken.png" alt="Chrispy's Roasted Chicken Crisps">
-            <button class="ctn-sec" onclick="location.href='roastchicken.html'">More Info</button>
-
-        </a>
-        <a href="saltvinegar.html" class="product">
-            <h2>Salt & Vinegar</h2>
-            <img src="images/Salt _ Vinegar.png" alt="Chrispy's Salt & Vinegar Crisps">
-            <button class="ctn-sec" onclick="location.href='saltvinegar.html'">More Info</button>
-        </a>
-    </section>
-
-    <section class="prod-wrap">
-
-        <a href="smokedbeef.html" class="product">
-            <h2>Smoked Beef</h2>
-            <img src="images/Smoked Beef.png" alt="Chrispy's Smoked Beef Crisps">
-            <button class="ctn-sec" onclick="location.href='smokedbeef.html'">More Info</button>
-        </a>
-        <a href="sweetchilli.html" class="product">
-            <h2>Sweet Chilli Chutney</h2>
-            <img src="images/Sweet Chilli Chutney.png" alt="Chrispy's Sweet Chilli Chutney Crisps">
-            <button class="ctn-sec" onclick="location.href='sweetchilli.html'">More Info</button>
-        </a>
-    </section>
-
-    <section class="prod-wrap">
-
-        <a href="tomato.html" class="product">
-            <h2>Tomato Sauce</h2>
-            <img src="images/Tomato Sauce.png" alt="Chrispy's Tomato Crisps">
-            <button class="ctn-sec" onclick="location.href='tomato.html'">More Info</button>
-        </a>
-    </section>
-
-
-    <footer>
-        <div class="foot-dig">
-            <h2>Developed by <a href="digitalcreation.co.za"> Digital Creation </a></h2>
+                </div>
+            </div>
         </div>
 
-        <div class="foot-co">
-            <h2>&copy; Chrisco 2022</h2>
-            <i class="fa fa-facebook" aria-hidden="true"><a href=""></a></i>
-            <i class="fa fa-instagram" aria-hidden="true"><a href=""></a></i>
-            <i class="fa fa-linkedin" aria-hidden="true"><a href=""></a></i>
+        <a href="#cheeseonion" class="product" id="cheese">
+            <img src="images/Cheese _ Onion.png" alt="Chrispy's Cheese & Onion Crisps">
+            <p>Cheese & Onion </p>
+        </a>
+
+        <div id="cheeseonion" class="overlay">
+            <div class="popup">
+                <h2>Cheese & Onion</h2>
+                <a class="close" href="#cheese">&times;</a>
+                <div class="content">
+                    <img src="images/Cheese _ Onion.png" alt="Chrispy's Cheese & Onion chips">
+                    <p>48 per pallet</p>
+                    <p>20 per box</p>
+                    <p>Barcode: 6 002870 006452</p>
+
+                </div>
+            </div>
+        </div>
+
+        <a href="#masala" class="product" id="mas">
+            <img src="images/Masala.png" alt="Chrispy's Masala Crisps">
+            <p>Masala</p>
+        </a>
+
+        <div id="masala" class="overlay">
+            <div class="popup">
+                <h2>Masala</h2>
+                <a class="close" href="#mas">&times;</a>
+                <div class="content">
+                    <img src="images/Masala.png" alt="Chrispy's Masala Chips">
+
+                    <p>48 per pallet</p>
+                    <p>20 per box</p>
+                    <p>Barcode: 6 002870 006452</p>
+
+                </div>
+            </div>
+        </div>
+
+        <a href="#mexicanchilli" class="product" id="mex">
+            <img src="images/Mexican Chilli.png" alt="Chrispy's Mexican Chilli Crisps">
+            <p>Mexican Chilli</p>
+        </a>
+
+        <div id="mexicanchilli" class="overlay">
+            <div class="popup">
+                <h2>Mexican Chilli</h2>
+                <a class="close" href="#mex">&times;</a>
+                <div class="content">
+                    <img src="images/Masala.png" alt="Chrispy's Masala Chips">
+
+                    <p>48 per pallet</p>
+                    <p>20 per box</p>
+                    <p>Barcode: 6 002870 006513</p>
+
+                </div>
+            </div>
+        </div>
+
+        <a href="#roastchicken" class="product" id="roast">
+            <img src="images/Roast Chicken.png" alt="Chrispy's Roasted Chicken Crisps">
+            <p>Roast Chicken</p>
+        </a>
+
+        <div id="roastchicken" class="overlay">
+            <div class="popup">
+                <h2>Roast Chicken</h2>
+                <a class="close" href="#roast">&times;</a>
+                <div class="content">
+                    <img src="images/Roast Chicken.png" alt="Chrispy's Roast Chicken chips">
+
+                    <p>48 per pallet</p>
+                    <p>20 per box</p>
+                    <p>Barcode: 6 009888 393925</p>
+
+                </div>
+            </div>
+        </div>
+
+        <a href="#saltvinegar" class="product" id="salt">
+            <img src="images/Salt _ Vinegar.png" alt="Chrispy's Salt & Vinegar Crisps">
+            <p>Salt & Vinegar</p>
+        </a>
+
+        <div id="saltvineger" class="overlay">
+            <div class="popup">
+                <h2>Salt & Vinegar</h2>
+                <a class="close" href="#salt">&times;</a>
+                <div class="content">
+                    <img src="images/Salt _ Vinegar.png" alt="Chrispy's Salt & Vinegar Crisps">
+
+                    <p>48 per pallet</p>
+                    <p>20 per box</p>
+                    <p>Barcode: 6 009888 393925</p>
+
+                </div>
+            </div>
+        </div>
+
+        <a href="#smokedbeef" class="product" id="smoked">
+            <img src="images/Smoked Beef.png" alt="Chrispy's Smoked Beef Crisps">
+            <p>Smoked Beef</p>
+        </a>
+
+        <div id="smokedbeef" class="overlay">
+            <div class="popup">
+                <h2>Smoked Beef</h2>
+                <a class="close" href="#smoked">&times;</a>
+                <div class="content">
+                    <img src="images/Smoked Beef.png" alt="Chrispy's Smoked Beef Crisps">
+
+                    <p>48 per pallet</p>
+                    <p>20 per box</p>
+                    <p>Barcode: 6 009888 393901</p>
+
+                </div>
+            </div>
+        </div>
+
+        <a href="#sweetchilli" class="product" id="sweet">
+            <img src="images/Sweet Chilli Chutney.png" alt="Chrispy's Sweet Chilli Chutney Crisps">
+            <p>Sweet Chilli Chutney</p>
+        </a>
+
+        <div id="sweetchilli" class="overlay">
+            <div class="popup">
+                <h2>Sweet Chilli Chutney</h2>
+                <a class="close" href="#sweet">&times;</a>
+                <div class="content">
+                    <img src="images/Sweet Chilli Chutney.png" alt="Chrispy's Sweet Chilli Chutney Crisps">
+
+                    <p>48 per pallet</p>
+                    <p>20 per box</p>
+                    <p>Barcode: 6 002870 006490</p>
+
+                </div>
+            </div>
+        </div>
+
+        <a href="#tomato" class="product" id="tom">
+            <img src="images/Tomato Sauce.png" alt="Chrispy's Tomato Crisps">
+            <p>Tomato</p>
+        </a>
+
+        <div id="tomato" class="overlay">
+            <div class="popup">
+                <h2>Tomato</h2>
+                <a class="close" href="#tom">&times;</a>
+                <div class="content">
+                    <img src="images/Tomato Sauce.png" alt="Chrispy's Tomato Crisps">
+
+                    <p>48 per pallet</p>
+                    <p>20 per box</p>
+                    <p>Barcode: 6 009888 393895</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="foot-dig">
+                <p>Developed by <a href="digitalcreation.co.za"> Digital Creation </a></p>
+            </div>
+
+            <div class="foot-co">
+                <p>&copy; Chrisco 2022</p>
+            </div>
         </div>
     </footer>
 

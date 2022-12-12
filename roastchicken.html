@@ -13,28 +13,23 @@
 
 <body>
 
-    <header>
+    <header class="sec-head">
         <nav>
-            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-            <div class="nav-links" id="nav-links" onclick="hideMenu()">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="products.html" id="current-page">PRODUCTS</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
+            <div class="nav-wrapper">
+                <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                <div class="nav-links" id="nav-links" onclick="hideMenu()">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="products.html" id="current-page">PRODUCTS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-
-        <div class="chips-wrapper">
-            <h1>Chrispy's Roast Chicken Potato Chips</h1>
-            <img src="images/Roast Chicken.png" alt="Chrispy's Roast Chicken chips" class="desktop-chips">
-            <img src="images/Roast Chicken.png" alt="Chrispy's Roast Chicken Chips" class="mobile-chips">
-            <button class="hero-btn" onclick="location.href='#chips'">MORE INFO</button>
-        </div>
-
+        <h1>Chrispy's Roast Chicken Potato Chips</h1>
     </header>
 
     <main class="chips" id="chips">
@@ -66,15 +61,14 @@
     <button class="ctn-btn" style="margin-bottom: 10vh; background-color: var(--sec);" onclick="location.href='products.html'">BACK TO FLAVOURS</button>
 
     <footer>
-        <div class="foot-dig">
-            <h2>Developed by <a href="digitalcreation.co.za"> Digital Creation </a></h2>
-        </div>
+        <div class="footer-wrapper">
+            <div class="foot-dig">
+                <p>Developed by <a href="digitalcreation.co.za"> Digital Creation </a></p>
+            </div>
 
-        <div class="foot-co">
-            <h2>&copy; Chrisco 2022</h2>
-            <i class="fa fa-facebook" aria-hidden="true"><a href=""></a></i>
-            <i class="fa fa-instagram" aria-hidden="true"><a href=""></a></i>
-            <i class="fa fa-linkedin" aria-hidden="true"><a href=""></a></i>
+            <div class="foot-co">
+                <p>&copy; Chrisco 2022</p>
+            </div>
         </div>
     </footer>
 
