@@ -385,15 +385,15 @@ header {
 }
 
 .product:hover {
-    background: var(--sec);
-    transition: 1.5s;
+    background: var(--acc);
+    transition: 0.5s;
     color: var(--bg) !important;
 }
 
 
 .product:hover p {
     color: var(--bg) !important;
-    transition: 1.5s;
+    transition: 0.5s;
 }
 
 .product p {
@@ -1088,15 +1088,15 @@ footer {
     }
 
     .product:hover {
-        background: var(--sec);
-        transition: 1.5s;
+        background: var(--acc);
+        transition: 0.5s;
         color: var(--bg) !important;
     }
 
 
     .product:hover p {
         color: var(--bg) !important;
-        transition: 1.5s;
+        transition: 0.5s;
     }
 
     .product p {
