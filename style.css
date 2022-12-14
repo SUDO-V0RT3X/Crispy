@@ -553,6 +553,11 @@ header {
     text-align: center;
 }
 
+.home-sect h2 {
+    margin: 1em;
+    text-align: center;
+}
+
 .home-sub-sect {
     display: flex;
     padding: 2vh 0vw 2vh 2vw;
@@ -911,6 +916,11 @@ footer {
         align-items: center;
     }
 
+    .home-sect h2 {
+        margin: 1em 0 0.5em 0;
+        text-align: center;
+        font-size: 1em;
+    }
 
     #small-packets {
         width: 70vw;
@@ -1167,6 +1177,59 @@ footer {
     .chips-info p {
         text-align: left;
         font-size: 3vh;
+    }
+
+    .popup {
+        margin: 7em auto;
+        padding: 2em;
+        background: var(--bg);
+        border-radius: 5px;
+        width: 80vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 5s ease-in-out;
+    }
+
+    .popup img {
+        width: auto;
+        height: 20vh;
+    }
+
+    .popup h2 {
+        margin-top: 0;
+        color: var(--text);
+    }
+
+    .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 2em;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--text);
+    }
+
+    .popup .close:hover {
+        color: var(--sec);
+    }
+
+    .popup .content {
+        max-height: 30%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup .content p {
+        font-size: 0.8em;
+        color: var(--text);
     }
 
     /* ABOUT PAGE */
