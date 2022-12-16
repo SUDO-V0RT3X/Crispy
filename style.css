@@ -32,7 +32,6 @@ h3,
 h4,
 h5,
 h6,
-a,
 button {
     font-family: "Roboto", sans-serif;
     font-size: 3vw;
@@ -42,6 +41,7 @@ button {
 a {
     text-decoration: none;
     color: var(--acc);
+    font-size: auto;
 }
 
 .hero-btn {
@@ -374,8 +374,8 @@ header {
     display: flex;
     flex-direction: column;
     padding: 0.6em;
-    height: 30vh;
-    width: 20vw;
+    height: 35vh;
+    width: 25vw;
     outline: 0.13em var(--acc) solid;
     margin: 1em 0;
     border-radius: 50px;
@@ -403,7 +403,46 @@ header {
 }
 
 .product img {
-    height: 20vh;
+    height: 28vh;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+.product-s {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6em;
+    height: 19vh;
+    width: 10vw;
+    outline: 0.13em var(--acc) solid;
+    margin: 1em 0;
+    border-radius: 50px;
+    background: var(--bg);
+    justify-content: center;
+    align-items: center;
+}
+
+.product-s:hover {
+    background: var(--acc);
+    transition: 0.5s;
+    color: var(--bg) !important;
+}
+
+
+.product-s:hover p {
+    color: var(--bg) !important;
+    transition: 0.5s;
+}
+
+.product-s p {
+    text-align: center;
+    color: var(--text);
+    font-size: 0.67em;
+}
+
+.product-s img {
+    height: 10vh;
     width: auto;
     display: block;
     margin: auto;
@@ -756,7 +795,6 @@ footer {
     h4,
     h5,
     h6,
-    a,
     button {
         font-family: "Roboto", sans-serif;
         font-size: 8vw;
@@ -765,6 +803,7 @@ footer {
     a {
         text-decoration: none;
         color: var(--acc);
+        font-size: auto;
     }
 
     .hero-btn {
@@ -1093,7 +1132,7 @@ footer {
         flex-direction: column;
         padding: 0.6em;
         height: auto;
-        width: 20vw;
+        width: 30vw;
         outline: 0.1em var(--acc) solid;
         margin: 1em 0;
         border-radius: 30px;
@@ -1122,9 +1161,48 @@ footer {
 
     .product img {
         height: auto;
-        width: 17vw;
+        width: 24vw;
         display: block;
         margin: 0 auto;
+    }
+
+    .product-s {
+        display: flex;
+        flex-direction: column;
+        padding: 0.6em;
+        height: auto;
+        width: 20vw;
+        outline: 0.13em var(--acc) solid;
+        margin: 1em 0;
+        border-radius: 20px;
+        background: var(--bg);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-s:hover {
+        background: var(--acc);
+        transition: 0.5s;
+        color: var(--bg) !important;
+    }
+
+
+    .product-s:hover p {
+        color: var(--bg) !important;
+        transition: 0.5s;
+    }
+
+    .product-s p {
+        text-align: center;
+        color: var(--text);
+        font-size: 0.7em;
+    }
+
+    .product-s img {
+        height: 10vh;
+        width: auto;
+        display: block;
+        margin: auto;
     }
 
     .chips-wrapper {
