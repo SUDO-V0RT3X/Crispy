@@ -18,15 +18,15 @@
     <section class="sec-head">
         <nav>
             <div class="nav-wrapper">
-                <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                <a href="https://chriscosa.co.za"><img src="images/logo.png" alt="logo" /></a>
                 <div class="nav-links" id="nav-links" onclick="hideMenu()">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="products.html">PRODUCTS</a></li>
-                        <li><a href="gallery.html">GALLERY</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="contact.html" id="current-page">CONTACT</a></li>
+                        <li><a href="https://chriscosa.co.za">HOME</a></li>
+                        <li><a href="https://chriscosa.co.za/products">PRODUCTS</a></li>
+                        <li><a href="https://chriscosa.co.za/gallery">GALLERY</a></li>
+                        <li><a href="https://chriscosa.co.za/about">ABOUT</a></li>
+                        <li><a href="https://chriscosa.co.za/contact" id="current-page">CONTACT</a></li>
                     </ul>
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -74,11 +74,12 @@
         </div>
 
         <div class="contact-col">
-            <form action="contactform.php" method="post">
+            <form action="https://formspree.io/f/xayzwnol" method="POST">
                 <input name="name" type="text" placeholder="NAME" required>
                 <input name="email" type="email" placeholder="EMAIL" required>
                 <input name="subject" type="text" placeholder="SUBJECT" required>
                 <textarea name="message" rows="10" placeholder="MESSAGE" required></textarea>
+                <input type="hidden" name="_next" value="https://chriscosa.co.za/thankyou">
                 <button type="submit" class="ctn-btn">SEND MESSAGE</button>
 
             </form>
