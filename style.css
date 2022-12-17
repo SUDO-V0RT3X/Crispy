@@ -4,7 +4,7 @@
 /* UNIVERSAL */
 :root {
     --text: rgb(0, 0, 0);
-    --bg: #ffffff;
+    --bg: rgb(255, 255, 255);
     --acc: rgb(218, 0, 0);
     --sec: rgb(255, 117, 4);
     --s-bg: rgb(236, 236, 236);
