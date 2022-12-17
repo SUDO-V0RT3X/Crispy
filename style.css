@@ -1186,7 +1186,7 @@ footer {
     .product p {
         text-align: center;
         color: var(--text);
-        font-size: 0.6em;
+        font-size: 0.4em;
     }
 
     .product img {
