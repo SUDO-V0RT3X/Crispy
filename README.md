@@ -1,0 +1,1 @@
+Made for the site www.chriscosa.co.za in December 2022. The site was updated in 2023. The navbar and other links are linked to the live site and hence do not work properly. Run each HTML individually.
